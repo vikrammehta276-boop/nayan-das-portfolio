@@ -1,3 +1,6 @@
+onlyBuiltDependencies:
+  - sass-embedded
+
 ignoredBuiltDependencies:
   - '@parcel/watcher'
   - esbuild
