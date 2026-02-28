@@ -68,6 +68,8 @@
     flex-direction: column;
     gap: $space-3;
     padding: $space-5;
+    min-width: 0;
+    overflow: hidden;
     @include transition(border-color);
     text-decoration: none;
     color: inherit;
@@ -83,6 +85,7 @@
     display: flex;
     align-items: center;
     gap: $space-2;
+    min-width: 0;
   }
 
   .project-card__icon {
@@ -118,7 +121,9 @@
     font-size: 0.8125rem;
     color: $color-muted;
     line-height: 1.5;
-    @include line-clamp(2);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     flex: 1;
   }
 
